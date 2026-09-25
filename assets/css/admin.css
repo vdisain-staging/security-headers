@@ -1,0 +1,86 @@
+.vsh-settings {
+	max-width: 720px;
+	margin-top: 12px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+	overflow: hidden;
+}
+
+.vsh-settings__row {
+	display: grid;
+	grid-template-columns: 20px minmax(0, 1fr) auto;
+	gap: 14px;
+	align-items: center;
+	margin: 0;
+	padding: 16px 20px;
+	border-bottom: 1px solid #f0f0f1;
+	cursor: pointer;
+}
+
+.vsh-settings__row:hover {
+	background: #f6f7f7;
+}
+
+.vsh-settings__row input[type="checkbox"] {
+	margin: 0;
+}
+
+.vsh-settings__title {
+	display: block;
+	color: #1d2327;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.vsh-settings__note {
+	display: block;
+	margin-top: 2px;
+	color: #646970;
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+.vsh-settings__value {
+	padding: 4px 10px;
+	border-radius: 999px;
+	background: #f0f0f1;
+	color: #1d2327;
+	font-family: Consolas, Monaco, monospace;
+	font-size: 12px;
+	line-height: 1.4;
+	white-space: nowrap;
+}
+
+.vsh-settings__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 14px 20px;
+	background: #f6f7f7;
+}
+
+.vsh-settings__footer .button {
+	margin: 0;
+}
+
+.vsh-settings__version {
+	margin: 0;
+	color: #646970;
+	font-size: 12px;
+}
+
+@media (max-width: 600px) {
+	.vsh-settings__row {
+		grid-template-columns: 20px minmax(0, 1fr);
+	}
+
+	.vsh-settings__value {
+		grid-column: 2;
+		justify-self: start;
+		white-space: normal;
+	}
+}
