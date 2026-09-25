@@ -2,7 +2,7 @@
 /**
  * Plugin Name: vDisain Security Headers
  * Description: Adds a few common HTTP security headers. Does not change permalinks, redirects, or server configuration.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Requires at least: 6.0
  * Requires PHP: 8.0
  * Author: vDisain | Denis Melamed
@@ -16,7 +16,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'VSH_VERSION', '1.0.0' );
+define( 'VSH_VERSION', '1.0.1' );
 define( 'VSH_PLUGIN_FILE', __FILE__ );
 define( 'VSH_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'VSH_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
